@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  rust-dev:
+    image: rust:latest
+    working_dir: /usr/src/app
+    volumes:
+      - type: bind
+        source: ./rust_project
+        target: /usr/src/app
+      - target_cache:/usr/src/app/target
+    command: cargo build
+
+volumes:
+  target_cache:
