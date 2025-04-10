@@ -9,7 +9,7 @@ services:
       - .:/usr/src/app
       - target_cache:/usr/src/app/target
     working_dir: /usr/src/app
-    command: cargo run
+    command: cargo watch -x run
 
 volumes:
   target_cache:

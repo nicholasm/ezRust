@@ -1,3 +1,3 @@
 fn main() {
-    println!("Hello, world!");
+    println!("EZrust thanks you for your support! 🍻");
 }
