@@ -6,10 +6,12 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - .:/usr/src/app
+      - type: bind
+        source: .
+        target: /usr/src/app
       - target_cache:/usr/src/app/target
     working_dir: /usr/src/app
-    command: cargo watch -x run
+    command: cargo watch --debug --poll -w src -x run
 
 volumes:
   target_cache:
