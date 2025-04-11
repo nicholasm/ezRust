@@ -12,6 +12,8 @@ services:
       - target_cache:/usr/src/app/target
     working_dir: /usr/src/app
     command: cargo watch --debug --poll -w src -x run
+    environment:
+      - RUST_LOG=info # for logging. Additional options are: error, warn, info, debug, trace
 
 volumes:
   target_cache:
