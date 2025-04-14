@@ -9,9 +9,20 @@
 - ⚡ Fast feedback loop for rapid development
 - 🔧 Zero setup needed on the host machine (just Docker!)
 
+## 📦 Dependencies
+- [🐳 🖥️ Docker Desktop] (https://www.docker.com/products/docker-desktop/) (Ideally)
+**Alternatively**
+- [🐳 Docker](https://docs.docker.com/get-docker/) (version 20.10+ recommended)
+- [🐳 📖 Docker Compose](https://docs.docker.com/compose/)
 
-## 📦 Getting Started
+## 🧭 Getting Started
 
 ```bash
 docker compose up
+```
+
+📝 Next step:
+Open your main Rust source file in your favorite editor: 
+```bash
+code ./src/main.rs
 ```
