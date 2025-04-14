@@ -11,6 +11,7 @@
 
 ## 📦 Dependencies
 - [🐳 🖥️ Docker Desktop] (https://www.docker.com/products/docker-desktop/) (Ideally)
+
 **Alternatively**
 - [🐳 Docker](https://docs.docker.com/get-docker/) (version 20.10+ recommended)
 - [🐳 📖 Docker Compose](https://docs.docker.com/compose/)
